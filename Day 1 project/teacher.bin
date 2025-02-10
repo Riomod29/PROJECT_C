@@ -1,0 +1,12 @@
+struct Teacher
+{
+	char teacherId[10];
+	char classroomIs[10];
+	char Name[20];
+	struct Date dateOfBirth;
+	bool  gender;
+	char Email[30];
+	char Phone[20];
+	char password[20];
+	struct Classroom classrooms[];	
+};

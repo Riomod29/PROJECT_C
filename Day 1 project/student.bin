@@ -1,0 +1,11 @@
+struct Student
+{
+	char studentId[10];
+	char classroomId[10];
+	char name[20];
+	struct Date dateOfBirth;
+	bool gender;
+	char email[30];
+	char phone[20];
+	char password[20];
+};

@@ -1,0 +1,3 @@
+struct Date{
+	int month, day, year;
+};
