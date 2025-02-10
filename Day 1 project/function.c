@@ -4,7 +4,7 @@
 #include "datatype.h"
 typedef struct Class Class;
 
-// Hàm menu chính (Main Menu)
+// HÃ m menu chÃ­nh (Main Menu)
 void mainMenu(){
     int choice;
 	    do{
@@ -98,7 +98,7 @@ int isValidStudentInfo(struct Student studentInfo){
 
     // Kiem tra trung lap trong file
     struct Student existingStudent;
-    FILE *inputFile = fopen("D:\\Code C task\\My Main Project\\Project\\data\\Student_Data.txt", "r");
+    FILE *inputFile = fopen("data.bin", "r");
     if (inputFile == NULL)
     {
         printf("=========> Khong mo duoc file du lieu sinh vien <=========\n");
@@ -248,7 +248,7 @@ void addNewStudent()
     }
 }
 
-// Hàm menu qu?n lı l?p h?c (Management Class Menu)
+// HÃ m menu qu?n lÃ½ l?p h?c (Management Class Menu)
 // void classManagementMenu()
 // {
 //     int choice;
@@ -286,7 +286,7 @@ void addNewStudent()
 //         }
 //     } while (choice != 0);
 // }
-// Hàm hi?n th? danh sách l?p h?c
+// HÃ m hi?n th? danh sÃ¡ch l?p h?c
 // void showClassList(Class showClass[], int *classCurrentLength)
 // {
 //     if (*classCurrentLength == 0)
@@ -303,7 +303,7 @@ void addNewStudent()
 //                showClass->classSize, showClass->classStatus);
 //     }
 // }
-// Hàm thêm m?i l?p h?c
+// HÃ m thÃªm m?i l?p h?c
 // void addNewClass(Class newClass[], int *classCurrentLength, int maxClassListSize)
 // {
 //     int classIDToAdd, classSizeToAdd, classStatusToAdd;
@@ -360,22 +360,22 @@ void addNewStudent()
 //    int choice;
 //
 //    do {
-//        system("cls"); // Dùng "clear" n?u ch?y trên Linux/macOS
+//        system("cls"); // DÃ¹ng "clear" n?u ch?y trÃªn Linux/macOS
 //        showMenu();
 //        scanf("%d", &choice);
 //
 //        switch (choice) {
 //            case 1:
 //                printf("\nYou selected Admin.\n");
-//                // Thêm code x? lı Admin ? dây
+//                // ThÃªm code x? lÃ½ Admin ? dÃ¢y
 //                break;
 //            case 2:
 //                printf("\nYou selected Student.\n");
-//                // Thêm code x? lı Student ? dây
+//                // ThÃªm code x? lÃ½ Student ? dÃ¢y
 //                break;
 //            case 3:
 //                printf("\nYou selected Teacher.\n");
-//                // Thêm code x? lı Teacher ? dây
+//                // ThÃªm code x? lÃ½ Teacher ? dÃ¢y
 //                break;
 //            case 0:
 //                printf("\nExiting the program...\n");
@@ -384,7 +384,7 @@ void addNewStudent()
 //                printf("\nInvalid choice! Please try again.\n");
 //        }
 //        printf("\nPress Enter to continue...");
-//        getchar(); getchar(); // Ğ?i phím Enter tru?c khi quay l?i menu
+//        getchar(); getchar(); // Ã?i phÃ­m Enter tru?c khi quay l?i menu
 //
 //    } while (1);
 //
