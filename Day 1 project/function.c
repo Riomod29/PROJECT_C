@@ -191,7 +191,7 @@ void addNewStudent()
 {
     struct Student newstudentInfo;
     FILE *inputFile;
-    inputFile = fopen("D:\\Code C task\\My Main Project\\Project\\data\\Student_Data.txt", "a");
+    inputFile = fopen("data.bin", "a");
     if (inputFile == NULL)
     {
         printf("\t\t=========> File khong ton tai <=========\n");
